@@ -1,2 +1,2 @@
-rootProject.name = 'comerce-boost'
-include 'service-kafka', 'service-redis', 'service-gateway', 'service-store', 'service-product', 'service-order', 'service-stock', 'service-legacy'
+rootProject.name = 'commerce-boost'
+include 'service-kafka', 'service-redis', 'service-gateway', 'service-store', 'service-product', 'service-order', 'service-stock', 'service-legacy', 'commerce-legacy'

@@ -1,0 +1,27 @@
+plugins {
+    id 'org.springframework.boot'
+}
+
+springBoot {
+    mainClass.set('com.example.CommerceLegacyApplication')
+}
+
+bootJar {
+    archiveFileName = 'commerce-legacy.jar'
+}
+
+repositories {
+    maven {
+        url 'https://packages.confluent.io/maven/'
+    }
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+
+    runtimeOnly 'com.mysql:mysql-connector-j'
+
+    compileOnly 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok'
+    implementation 'org.springframework.boot:spring-boot-starter-actuator'
+}
