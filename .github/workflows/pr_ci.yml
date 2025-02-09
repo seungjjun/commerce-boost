@@ -22,5 +22,8 @@ jobs:
       - name: Grant permission
         run: chmod +x gradlew
 
+      - name: Check current files
+        run: ls -la
+
       - name: Gradle Build
         run: ./gradlew build
